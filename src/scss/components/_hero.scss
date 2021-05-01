@@ -1,0 +1,119 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../img/main-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  &__left {
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    z-index: 1;
+    background: rgba(255, 251, 243, 0.6);
+    backdrop-filter: blur(40px);
+  }
+  &__container {
+    height: 100vh;
+    position: absolute;
+    z-index: 4;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &-title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 98%;
+    letter-spacing: -0.01em;
+    color: #120d08;
+  }
+  &-subtitle {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #120d08;
+    margin-bottom: 40px;
+  }
+  &-btn {
+    background-color: #6eebef;
+    font-size: 18px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 70px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: (1024px)) {
+  .hero {
+    &__left {
+      width: 100vw;
+      height: 60vh;
+    }
+    &__wrapper {
+      align-items: center;
+    }
+    &__container {
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+    }
+    &-title {
+      font-size: 35px;
+      text-align: center;
+    }
+    &-subtitle {
+      font-size: 16px;
+      text-align: center;
+    }
+    &-btn {
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+  }
+}
+
+@media (max-width: (768px)) {
+  .hero {
+    &-title {
+      font-size: 28px;
+    }
+    &-subtitle {
+      font-size: 16px;
+    }
+    &-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (max-width: (375px)) {
+  .hero {
+    &-title {
+      font-size: 26px;
+    }
+    &-subtitle {
+      font-size: 14px;
+    }
+    &-btn {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+    &__container {
+      padding: 10px;
+    }
+  }
+}
