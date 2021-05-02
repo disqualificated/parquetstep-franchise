@@ -70,6 +70,9 @@ body {
   font-weight: 400;
   background-color: var(--color-white); }
 
+h2 {
+  margin: 0; }
+
 img {
   max-width: 100%; }
 
@@ -125,5 +128,12 @@ ul {
     padding: 60px 0; }
     .section-header {
       font-size: 35px; } }
+
+@media (max-width: 425px) {
+  .section {
+    padding: 60px 0; }
+    .section-header {
+      font-size: 28px;
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=global.css.map */
