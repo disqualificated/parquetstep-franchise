@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-black: #000;
   --color-white: #fff; }
@@ -110,5 +111,19 @@ ul {
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none; }
+
+/* Настройки секции */
+.section {
+  padding: 100px 0; }
+  .section-header {
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 40px; }
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 0; }
+    .section-header {
+      font-size: 35px; } }
 
 /*# sourceMappingURL=global.css.map */
