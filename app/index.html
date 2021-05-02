@@ -33,7 +33,9 @@
         бизнеса и&nbsp;зарабатывай<br />
         от&nbsp;300&nbsp;000&nbsp;рублей в&nbsp;месяц</span
       >
-      <button class="btn hero-btn">Оставить заявку на покупку франшизы</button>
+      <button class="btn hero-btn" data-path="form-popup">
+        Оставить заявку на покупку франшизы
+      </button>
     </div>
   </div>
 </section>
@@ -68,6 +70,46 @@
     </div>
   </div>
 </section>
+
+        <div class="modals">
+  <div class="modal-overlay">
+    <div class="modal modal--1" data-target="form-popup">
+      <div class="modal__header">
+        <svg class="modal-close">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+        <span class="modal-title">Оставьте заявку</span>
+      </div>
+      <div class="modal__body">
+        <form class="modal__form">
+          <input type="text" class="input modal-input" placeholder="Ваше имя" />
+          <input
+            type="text"
+            class="input modal-input"
+            placeholder="Ваш город"
+          />
+          <input
+            type="text"
+            class="input modal-input"
+            placeholder="Ваш телефон"
+          />
+          <input
+            type="text"
+            class="input modal-input"
+            placeholder="Ваш e-mail"
+          />
+          <button type="submit" class="btn modal-btn">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="modal__footer">
+        <p class="modal-text">
+          Нажимая кнопку &laquo;Отправить заявку&raquo;, вы&nbsp;соглашаетесь
+          с&nbsp;условиями обработки персональных данных
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
       </main>
       <footer class="footer">
