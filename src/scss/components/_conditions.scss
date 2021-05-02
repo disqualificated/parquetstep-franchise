@@ -1,0 +1,41 @@
+.conditions {
+  background: #fafafa;
+  &-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+  &-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 140%;
+  }
+  &__block {
+    width: 50%;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 327px;
+  }
+}
+
+@media (max-width: (768px)) {
+  .conditions {
+    background: #fafafa;
+    &-title {
+      font-size: 20px;
+    }
+    &-text {
+      font-size: 16px;
+    }
+    &__block {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__wrapper {
+      height: auto;
+    }
+  }
+}

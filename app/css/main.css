@@ -136,9 +136,13 @@
   font-size: 18px;
   line-height: 140%;
   width: 100%;
-  padding: 14px 0; }
+  padding: 14px 0;
+  box-shadow: 0px 10px 20px rgba(67, 148, 151, 0.4);
+  transition: 0.3s ease; }
   .btn:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background: #63dbdf;
+    box-shadow: 0px 10px 20px rgba(67, 148, 151, 0.4); }
 
 @media (max-width: 768px) {
   .btn {
@@ -279,6 +283,37 @@
 @media (max-width: 425px) {
   .about-text {
     font-size: 16px; } }
+
+.conditions {
+  background: #fafafa; }
+  .conditions-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 140%;
+    margin-bottom: 8px; }
+  .conditions-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 140%; }
+  .conditions__block {
+    width: 50%; }
+  .conditions__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 327px; }
+
+@media (max-width: 768px) {
+  .conditions {
+    background: #fafafa; }
+    .conditions-title {
+      font-size: 20px; }
+    .conditions-text {
+      font-size: 16px; }
+    .conditions__block {
+      width: 100%;
+      margin-bottom: 20px; }
+    .conditions__wrapper {
+      height: auto; } }
 
 .footer__container {
   display: flex;

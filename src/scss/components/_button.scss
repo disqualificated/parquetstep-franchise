@@ -6,8 +6,12 @@
   line-height: 140%;
   width: 100%;
   padding: 14px 0;
+  box-shadow: 0px 10px 20px rgba(67, 148, 151, 0.4);
+  transition: 0.3s ease;
   &:hover {
     cursor: pointer;
+    background: #63dbdf;
+    box-shadow: 0px 10px 20px rgba(67, 148, 151, 0.4);
   }
 }
 
