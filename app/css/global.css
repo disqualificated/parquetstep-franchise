@@ -72,7 +72,8 @@ body {
   color: #120d08;
   letter-spacing: -0.01em; }
 
-h2 {
+h2,
+h4 {
   margin: 0; }
 
 img {
@@ -103,6 +104,9 @@ ul {
 
 .error {
   border: 2px #ff4019 solid !important; }
+
+.center {
+  text-align: center; }
 
 .btn-reset {
   border: none;
